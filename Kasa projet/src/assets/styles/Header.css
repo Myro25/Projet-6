@@ -1,0 +1,75 @@
+.header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+.Kasa-logo {
+    max-width: 210px;
+}
+
+#Button-header {
+    display: flex;
+}
+
+.header-button {
+
+    margin-left: 10px;
+    /* Ajoutez une marge entre les boutons */
+    padding: 8px 12px;
+
+    color: black;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+
+}
+
+.sous-header {
+    position: relative;
+    width: 100%;
+    /* Ajustez la largeur selon vos besoins */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.background-header {
+    border-radius: 25px;
+
+    background: #000;
+    filter: brightness(40%);
+    /* Filtre noir */
+
+    max-width: 100%;
+    /* La largeur maximale de l'image est égale à la largeur de son conteneur */
+    height: auto;
+    display: block;
+    /* Élimine l'espace sous l'image dû à l'affichage en ligne */
+    margin: 0 auto;
+}
+
+
+
+.sous-header h1 {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Montserrat;
+    font-size: 3vw;
+    text-align: center;
+    white-space: nowrap;
+    /* Empêche le texte de passer à la ligne */
+    white-space: nowrap;
+
+
+}
