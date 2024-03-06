@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    padding: 66px 0 29px 0;
+    /* Largeur du footer sur toute la page */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer p {
+    color: #FFF;
+
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.LogoFooter {
+    width: 122px;
+    height: 39.444px;
+    flex-shrink: 0;
+}
