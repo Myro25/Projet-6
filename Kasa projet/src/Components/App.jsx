@@ -1,7 +1,7 @@
 import Header from './Header'
 import '../assets/styles/App.css'
 import Footer from './Footer'
-import Location from './tableau'
+import Tableau from './tableau'
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Header />
-      <Location />
+      <Tableau />
       <Footer />
 
 
