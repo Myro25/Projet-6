@@ -4,7 +4,11 @@ import React from 'react'
 const Home = () => {
 
     return (
-        <p>zzzzz</p>
+        <div>
+            <p>zzzzz</p>
+        </div>
+
+
     )
 
 }

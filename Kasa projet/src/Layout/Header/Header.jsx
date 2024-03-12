@@ -1,6 +1,6 @@
-import logo from '../assets/Image/logo.png'
-import background from '../assets/background.png/'
-import '../assets/styles/Header.css'
+import logo from '../../assets/Image/logo.png'
+
+
 
 
 function Header() {

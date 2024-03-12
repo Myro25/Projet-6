@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, About, Logement, Error404 } from "./Pages/Public/Index";
+import { Home, About, Logement, Error404 } from "./lien";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import Layout from "../../Layout/Layout";
