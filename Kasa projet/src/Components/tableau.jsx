@@ -1,4 +1,4 @@
-
+import '../assets/styles/tableau.css'
 import logementsData from '../assets/API/logements.json';
 
 // Affiche les informations de logementsData et les fonctions Tableau
@@ -6,10 +6,10 @@ const Logement = ({ data }) => {
     const { title, description, cover } = data;
 
     return (
-        <div>
+        <div className='logement'>
             <h2>{title}</h2>
             <img src={cover} alt={title} />
-            <p>{description}</p>
+
         </div>
     );
 };

@@ -1,0 +1,23 @@
+.logement {
+    width: 1240px;
+    height: 829px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #F6F6F6;
+}
+
+.logement h2 {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 142.6%;
+}
+
+.logement img {
+    width: 340px;
+    height: 340px;
+    flex-shrink: 0;
+    color: #FF6060;
+    border-radius: 10px;
+}
