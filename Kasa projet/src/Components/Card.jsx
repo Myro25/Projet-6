@@ -1,4 +1,4 @@
-import '../assets/styles/tableau.css'
+
 import logementsData from '../assets/API/logements.json';
 
 // Affiche les informations de logementsData et les fonctions Tableau
