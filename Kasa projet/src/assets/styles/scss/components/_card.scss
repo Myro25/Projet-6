@@ -6,7 +6,10 @@
     background-color: #F6F6F6;
     padding: 20px;
     border-radius: 25px;
-    width: 1240px;
+    max-width: 1240px;
+    height: auto;
+    width: 100%;
+    /* Utilisation de 100% de la largeur */
     justify-content: center;
     margin: 0 auto;
 }
@@ -34,5 +37,52 @@
         width: 340px;
         height: 340px;
         border-radius: 10px;
+    }
+}
+
+
+/* Media query pour les appareils ayant une largeur maximale de 600 pixels */
+@media only screen and (max-width: 600px) {
+    .logementdispo {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-content: center;
+        overflow-x: hidden;
+        background-color: #F6F6F6;
+        padding: 20px;
+        border-radius: 25px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .logement {
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 20px;
+        margin: 0 auto;
+
+        &__title {
+            font-family: Montserrat;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 5px;
+            margin-bottom: 10px;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        &__image {
+            max-width: 100%;
+            width: 335px;
+            height: 255px;
+            flex-shrink: 0;
+            /* Pour éviter que l'image ne dépasse de son conteneur */
+            border-radius: 10px;
+        }
     }
 }
