@@ -1,11 +1,13 @@
-import background from '../assets/Image/background.png'
+import background from '../assets/Image/background.png';
+import '../../src/assets/styles/scss/components/_banner.scss';
 
-function banner() {
-    <div className='sous-header'>
-        <img src={background} alt='montagne' className='background-header'></img>
-        <h1>Chez vous, partout et ailleurs</h1>
-    </div>
+function Banner() {
+    return (
+        <div className='banner'>
+            <img src={background} alt='montagne' className='banner__image'></img>
+            <h1 className='banner__title'>Chez vous, partout et ailleurs</h1>
+        </div>
+    );
 }
 
-export default banner
-
+export default Banner;

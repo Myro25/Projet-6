@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    width: 1240px;
+    margin-bottom: 50px;
+
+    &__logo {
+        width: 210.322px;
+        height: 68px;
+        flex-shrink: 0;
+    }
+
+    &__button {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__button-- {
+        color: #000;
+        margin-left: 57px;
+        text-align: right;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        padding: none;
+
+        &:hover {
+            border-bottom: 2px solid black;
+        }
+
+
+    }
+}

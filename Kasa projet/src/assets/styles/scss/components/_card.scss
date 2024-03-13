@@ -1,0 +1,38 @@
+.logementdispo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    overflow-x: hidden;
+    background-color: #F6F6F6;
+    padding: 20px;
+    border-radius: 25px;
+    width: 1240px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.logement {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    &__title {
+        font-family: Montserrat;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 5px;
+        margin-bottom: 10px;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+    }
+}
