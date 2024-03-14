@@ -9,7 +9,7 @@
     max-width: 1240px;
     height: auto;
     width: 100%;
-    /* Utilisation de 100% de la largeur */
+
     justify-content: center;
     margin: 0 auto;
 }
@@ -39,7 +39,6 @@
         border-radius: 10px;
     }
 }
-
 
 /* Media query pour les appareils ayant une largeur maximale de 600 pixels */
 @media only screen and (max-width: 600px) {

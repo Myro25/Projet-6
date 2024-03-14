@@ -1,20 +1,26 @@
-import '../../src/assets/styles/scss/components/_card.scss'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import logementsData from '../assets/API/logements.json';
+import '../assets/styles/scss/components/_card.scss';
 
-// Affiche les informations de logementsData et les fonctions Tableau
+
+
+//  Affiche les détails d'un logement et crée un lien vers sa page de détails
 const Logement = ({ data }) => {
-    const { title, description, cover } = data;
+    const { id, title, description, cover } = data;
 
     return (
         <div className='logement'>
             <h2 className='logement__title'>{title}</h2>
-            <img className='logement__image' src={cover} alt={title} />
-
+            {/* Utilisez Link pour envelopper l'image et lier vers la page des détails */}
+            <Link to={`/logement/${id}`}>
+                <img className='logement__image' src={cover} alt={title} />
+            </Link>
         </div>
     );
 };
 
-// Modifiez la fonction Tableau pour utiliser le composant Logement et les données logementsData
+// affiche une liste de logements en utilisant le composant 'Logement' pour chaque élément de la liste
 const Card = () => {
     return (
         <>
