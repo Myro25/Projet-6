@@ -50,7 +50,7 @@ const FicheLogement = () => {
                     <h4>{logement.name}</h4>
                     <img src={logement.picture} alt={logement.name} />
                 </div>
-                <div className="details_container">
+                <div className="details_container_details">
                     <p className="details_equipments_container">{logement.description}</p>
                     <div className="details_description_container">
                         {logement.equipments.map((equipment, index) => (
