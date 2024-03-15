@@ -1,0 +1,25 @@
+.details_container {
+    display: flex;
+    flex-direction: column;
+    /* Les éléments enfants sont disposés en colonne */
+}
+
+.details_tag_container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permettre le retour à la ligne si nécessaire */
+}
+
+.details_tag_container {
+
+    padding: 0;
+    /* Suppression du padding */
+    margin: 0;
+    /* Suppression de la marge */
+}
+
+.details_description_container {
+    display: flex;
+    flex-direction: column;
+    /* Les équipements sont disposés de haut en bas */
+}
