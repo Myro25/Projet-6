@@ -28,7 +28,7 @@ const FicheLogement = () => {
             console.log(error);
         }
     };
-
+    // chargement de la page 
     if (waiting) return <h3>Chargement..</h3>;
 
     return (
