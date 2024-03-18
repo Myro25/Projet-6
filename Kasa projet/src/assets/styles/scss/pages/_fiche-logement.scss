@@ -1,5 +1,23 @@
 .details_container_details {
-    display: flex;
+    display: inline-flex;
+    align-items: center;
+    gap: 76px;
+
+    & button {
+        background: #FF6060;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        display: flex;
+        width: 582px;
+        padding: 10px 20px 10px 10px;
+        align-items: center;
+    }
 }
 
 
@@ -22,14 +40,7 @@
 }
 
 /* Style pour le bouton Afficher les équipements */
-.details_container_details button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    cursor: pointer;
-}
+
 
 /* Style pour la liste des équipements */
 .details_description_container {}
