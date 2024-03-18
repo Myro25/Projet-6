@@ -20,3 +20,21 @@
     font-style: normal;
     font-weight: 700;
 }
+
+/* Style pour le bouton Afficher les équipements */
+.details_container_details button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Style pour la liste des équipements */
+.details_description_container {}
+
+/* Style des équipements */
+.details_description_container p {
+    margin: 5px 0;
+}

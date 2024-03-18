@@ -1,25 +1,30 @@
-import { useState } from "react";
-
+import React, { useState } from 'react';
+import '@/assets/styles/scss/components/_slider.scss'
 
 const Slider = ({ pictures }) => {
+    const [index, setIndex] = useState(0);
 
-    const [index, setindex] = useState(0);
-    console.log(pictures)
+    const handleClickPrev = () => {
+        const newIndex = (index === 0) ? pictures.length - 1 : index - 1;
+        setIndex(newIndex);
+    };
+
+    const handleClickNext = () => {
+        const newIndex = (index === pictures.length - 1) ? 0 : index + 1;
+        setIndex(newIndex);
+    };
+
     return (
-
-        <div>
-
+        <div className="slider-container">
+            <button className="prev-btn" onClick={handleClickPrev}>&#10094;</button>
             <div className="slideshowSlider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
-                {pictures.map((picture, index) => (
-                    <div className="slide" key={index} style={{ background: `no-repeat center/cover url(${picture})` }}></div>
-
+                {pictures.map((picture, idx) => (
+                    <div className="slide" key={idx} style={{ backgroundImage: `url(${picture})` }}></div>
                 ))}
             </div>
-
+            <button className="next-btn" onClick={handleClickNext}>&#10095;</button>
         </div>
-
-
-    )
-}
+    );
+};
 
 export default Slider;

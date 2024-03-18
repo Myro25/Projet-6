@@ -7,6 +7,8 @@ import '@/assets/styles/scss/pages/_fiche-logement.scss';
 const FicheLogement = () => {
     const [logement, setLogement] = useState({});
     const [waiting, setWaiting] = useState(true);
+    const [showEquipments, setShowEquipments] = useState(false);
+    const [showDescription, setShowDescription] = useState(false);
 
     const { id } = useParams();
     let navigate = useNavigate();
@@ -28,9 +30,18 @@ const FicheLogement = () => {
             console.log(error);
         }
     };
+
+    const toggleEquipments = () => {
+        setShowEquipments(!showEquipments);
+    };
+
+    const toggleDescription = () => {
+        setShowDescription(!showDescription);
+    };
+
     // chargement de la page 
     if (waiting) return <h3>Chargement..</h3>;
-
+    // retourne les informations de la page personnalisé
     return (
         <section className='SectionLogement'>
             <Slider pictures={logement.pictures} />
@@ -51,12 +62,18 @@ const FicheLogement = () => {
                     <img src={logement.picture} alt={logement.name} />
                 </div>
                 <div className="details_container_details">
-                    <p className="details_equipments_container">{logement.description}</p>
-                    <div className="details_description_container">
-                        {logement.equipments.map((equipment, index) => (
-                            <p key={index}>{equipment}</p>
-                        ))}
-                    </div>
+                    <button onClick={toggleDescription}>Afficher la description</button>
+                    {showDescription && (
+                        <p className="details_equipments_container">{logement.description}</p>
+                    )}
+                    <button onClick={toggleEquipments}>Afficher les équipements</button>
+                    {showEquipments && (
+                        <div className="details_description_container">
+                            {logement.equipments.map((equipment, index) => (
+                                <p key={index}>{equipment}</p>
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
         </section>
