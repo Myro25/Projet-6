@@ -1,12 +1,20 @@
+.SectionLogement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 .details_container_details {
     display: inline-flex;
     align-items: center;
     gap: 76px;
 
-    & button {
+    button {
         background: #FF6060;
         cursor: pointer;
-        border-radius: 5px;
+        border-radius: 10px;
         border: none;
         color: #FFF;
         font-family: Montserrat;
@@ -20,32 +28,47 @@
     }
 }
 
+.toggle-button {
+    background: #FF6060;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    width: 582px;
+    padding: 10px 20px 10px 10px;
+    align-items: center;
+
+    svg {
+        margin-left: 10px;
+    }
+}
 
 .details_tag_container {
     display: flex;
     gap: 10px;
+
+    p {
+        width: 115px;
+        height: 25px;
+        border-radius: 10px;
+        background: #FF6060;
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+    }
 }
 
-.details_tag_container p {
-    width: 115px;
-    height: 25px;
-    border-radius: 10px;
-    background: #FF6060;
-    color: #FFF;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-}
-
-/* Style pour le bouton Afficher les équipements */
-
-
-/* Style pour la liste des équipements */
-.details_description_container {}
-
-/* Style des équipements */
-.details_description_container p {
-    margin: 5px 0;
+.details_description_container {
+    p {
+        margin: 5px 0;
+    }
 }

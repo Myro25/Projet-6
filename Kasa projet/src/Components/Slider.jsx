@@ -17,9 +17,9 @@ const Slider = ({ pictures }) => {
     return (
         <div className="slider-container">
             <button className="prev-btn" onClick={handleClickPrev}>&#10094;</button>
-            <div className="slideshowSlider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
+            <div className="slideshowSlider" style={{ width: `${pictures.length * 100}%`, transform: `translate3d(${-index * (100 / pictures.length)}%, 0, 0)` }}>
                 {pictures.map((picture, idx) => (
-                    <div className="slide" key={idx} style={{ backgroundImage: `url(${picture})` }}></div>
+                    <div className="slide" key={idx} style={{ width: `${100 / pictures.length}%`, backgroundImage: `url(${picture})` }}></div>
                 ))}
             </div>
             <button className="next-btn" onClick={handleClickNext}>&#10095;</button>

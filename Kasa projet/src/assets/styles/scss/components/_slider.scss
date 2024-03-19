@@ -1,22 +1,26 @@
 /* Slider container */
-
 .slider-container {
     width: 1240px;
     height: 415px;
-    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    /* Ajout de la position relative pour positionner les boutons */
 }
 
 /* Slideshow container */
 .slideshowSlider {
     display: flex;
+
     transition: transform 0.5s ease;
 }
 
 /* Slide */
 .slide {
-    width: 1240px;
     height: 415px;
     flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Bouton précédent */
