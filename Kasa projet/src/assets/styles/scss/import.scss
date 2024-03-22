@@ -1,5 +1,25 @@
-@import './utils';
-@import './template/';
-@import './layout/';
-@import './components/';
-@import './pages/';
+//Utilitaires
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/keyframes';
+
+// Template de base
+@import './template/template';
+
+//Layout
+@import './layout/header';
+@import './layout/footer';
+
+//Components
+@import './components/collapse';
+@import './components/banner';
+@import './components/card';
+@import './components/slider';
+
+
+//pages
+@import './pages/home';
+@import './pages/about';
+@import './pages/fiche-logement';
+@import './pages/404';

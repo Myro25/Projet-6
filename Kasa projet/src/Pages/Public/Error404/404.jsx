@@ -1,5 +1,4 @@
 // 404.jsx
-import '../../../assets/styles/scss/pages/_404.scss'
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 const Error404 = () => {

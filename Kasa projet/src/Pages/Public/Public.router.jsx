@@ -1,7 +1,7 @@
 import React from 'react';
-import { Home, About, Logement, Error404 } from "./lien";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Layout from "../../Layout/Layout";
+import { Home, About, Logement, Error404 } from "./lien";
+import Layout from "@/Layout/Layout";
 
 const PublicRouter = () => {
     return (

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import LogementService from '@/_Service/logement.service';
 import Slider from '@/Components/Slider';
-import '@/assets/styles/scss/pages/_fiche-logement.scss';
 
 const FicheLogement = () => {
     const [logement, setLogement] = useState({});
