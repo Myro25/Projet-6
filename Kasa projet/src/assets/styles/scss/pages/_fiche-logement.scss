@@ -1,13 +1,34 @@
 .SectionLogement {
     display: flex;
+    width: 1440px;
+    padding-top: 45px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    gap: 50px;
+}
+
+.details_container {
+    display: flex;
+    width: 1240px;
+    flex-direction: column;
+    margin: 0 auto;
+    /* Centre le conteneur horizontalement */
+    padding-left: 20px;
+    /* Ajoutez un padding gauche pour l'espace */
+}
+
+
+.details_title_container h2 {
+    color: #FF6060;
+
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
 }
 
 .details_container_details {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 76px;
 
@@ -66,6 +87,28 @@
         font-weight: 700;
     }
 }
+
+.details_profil_container {
+    color: #FF6060;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 20px;
+    /* Ajoute un espace en haut */
+    padding: 20px;
+    /* Ajoute un padding pour l'espace interne */
+    border: 1px solid #FF6060;
+    /* Ajoute une bordure */
+    border-radius: 10px;
+    /* Ajoute une bordure arrondie */
+
+    & img {
+        border-radius: 100px;
+    }
+}
+
 
 .details_description_container {
     p {

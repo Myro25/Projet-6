@@ -8,6 +8,7 @@
     flex-direction: column;
     margin-top: 31px;
 
+
     & .collapse-head {
         @extend %displayflex;
         background-color: $color-primary;
@@ -47,7 +48,7 @@
     }
 
     & .collapse-desc {
-        color: $color-primary;
+        color: black;
         padding: 30px 12px 27px 20px;
         font-size: 18px;
     }

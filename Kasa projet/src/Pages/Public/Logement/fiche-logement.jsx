@@ -58,8 +58,8 @@ const FicheLogement = () => {
                     ))}
                 </div>
                 <div className="details_profil_container">
-                    <h4>{logement.name}</h4>
-                    <img src={logement.picture} alt={logement.name} />
+                    <h4>{logement.host.name}</h4>
+                    <img src={logement.host.picture} alt={logement.host.name} />
                 </div>
                 <div className="details_container_details">
                     {/* Collapse pour la description */}
@@ -71,13 +71,14 @@ const FicheLogement = () => {
                     {/* Collapse pour les équipements */}
                     <Collapse
                         title="Équipements"
-                        description={logement.equipments.join(', ')} // Si logement.equipments est un tableau, le transformer en une chaîne de caractères séparée par une virgule
+                        description={logement.equipments.join(',')} // Si logement.equipments est un tableau, le transformer en une chaîne de caractères séparée par une virgule
                         comportement="liste"
                     />
                 </div>
             </div>
         </section>
     );
+
 };
 
 export default FicheLogement;
