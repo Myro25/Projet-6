@@ -1,87 +1,34 @@
-.logementdispo {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    overflow-x: hidden;
-    background-color: #F6F6F6;
-    padding: 20px;
-    border-radius: 25px;
-    max-width: 1240px;
-    height: auto;
-    width: 100%;
-
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.logement {
-    border-radius: 10px;
+.Card {
     position: relative;
+    border-radius: 10px;
     overflow: hidden;
-
-    &__title {
-        font-family: Montserrat;
-        color: white;
-        font-size: 18px;
-        font-weight: 700;
-        padding: 5px;
-        margin-bottom: 10px;
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-    }
-
-    &__image {
-        width: 100%;
-        height: auto;
-        width: 340px;
-        height: 340px;
-        border-radius: 10px;
-    }
+    width: 340px;
 }
 
-/* Media query pour les appareils ayant une largeur maximale de 600 pixels */
-@media only screen and (max-width: 600px) {
-    .logementdispo {
-        width: 90%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-        justify-content: center;
-        overflow-x: hidden;
-        background-color: #F6F6F6;
-        padding: 20px;
-        border-radius: 25px;
-        justify-content: center;
-        margin: 0 auto;
-    }
+.Card__content {
+    position: relative;
+    padding-bottom: calc(100% - 40px);
+    /* Déduction de la hauteur du titre (par exemple, 40px) */
+}
 
-    .logement {
-        border-radius: 10px;
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 20px;
-        margin: 0 auto;
+.Card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
 
-        &__title {
-            font-family: Montserrat;
-            color: white;
-            font-size: 18px;
-            font-weight: 700;
-            padding: 5px;
-            margin-bottom: 10px;
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-        }
-
-        &__image {
-            max-width: 100%;
-            width: 335px;
-            height: 255px;
-            flex-shrink: 0;
-            /* Pour éviter que l'image ne dépasse de son conteneur */
-            border-radius: 10px;
-        }
-    }
+.Card__title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 5px;
+    margin: 0;
 }

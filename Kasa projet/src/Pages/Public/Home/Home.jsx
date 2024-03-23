@@ -1,10 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import LogementService from "@/_Service/logement.service";
-
 import Card from '@/Components/Card';
 import Banner from '@/Components/Banner';
-
 import imgbanner from "@/assets/Image/background.png";
 
 

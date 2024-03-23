@@ -2,16 +2,15 @@
 import React from 'react';
 import Collapse from '@/Components/collapse'
 import aboutData from '@/assets/API/aboutData.json';
-import Banner from '@/Components/Banner'
-
-import imgbanner from "@/assets/Image/background.png";
+import Banner_about from '@/Components/Banner_about'
+import imgbanner from "@/assets/Image/background_about.png";
 
 const Propos = () => {
     // Contenu du composant
     return (
-        <div>
+        <div className='background_about'>
 
-            <Banner pictures={imgbanner} title={""} />
+            <Banner_about pictures={imgbanner} title={""} />
 
             <ul>
                 {

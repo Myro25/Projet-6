@@ -1,12 +1,15 @@
 import React from 'react';
 
+
 const Card = ({ image, title }) => {
     return (
-        <li className="Card">
-            <img src={image} alt="Card d'un logement" />
-            <div className="Card-sombre"></div>
-            <h2>{title}</h2>
-        </li>
+        <div className='Card'>
+            <div className="Card__content">
+                <img src={image} alt="Card d'un logement" className="Card__image" />
+
+                <h2 className="Card__title">{title}</h2>
+            </div>
+        </div>
     );
 };
 
