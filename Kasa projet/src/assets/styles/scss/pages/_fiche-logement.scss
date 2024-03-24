@@ -88,27 +88,77 @@
     }
 }
 
+.details_container {
+    display: flex;
+    width: 1240px;
+    flex-direction: row;
+    margin: 0 auto;
+    padding-left: 20px;
+    /* Ajoutez un padding gauche pour l'espace */
+}
+
+.details_left_container {
+    flex: 1;
+}
+
+.details_right_container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.details_right_container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
 .details_profil_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrer le contenu verticalement */
     color: #FF6060;
-    text-align: right;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     margin-top: 20px;
     /* Ajoute un espace en haut */
+    margin-bottom: 20px;
+    /* Ajoute un espace en bas */
     padding: 20px;
     /* Ajoute un padding pour l'espace interne */
-    border: 1px solid #FF6060;
+
     /* Ajoute une bordure */
     border-radius: 10px;
     /* Ajoute une bordure arrondie */
-
-    & img {
-        border-radius: 100px;
-    }
 }
 
+.details_profil_container img {
+    border-radius: 100px;
+    margin-bottom: 10px;
+    /* Ajoute un espace entre l'image et le nom */
+}
+
+.details_profil_container h4 {
+    margin: 0;
+    /* Supprime les marges par défaut */
+}
+
+.Rating {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 10px;
+    /* Ajoute un espace entre le nom et le rating */
+}
 
 .details_description_container {
     p {
