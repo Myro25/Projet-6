@@ -9,7 +9,6 @@
 /* Slideshow container */
 .slideshowSlider {
     display: flex;
-
     transition: transform 0.5s ease;
 }
 
@@ -20,6 +19,29 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    .slide {
+        height: 255px !important;
+    }
+
+    .prev-btn,
+    .next-btn {
+        top: 50% !important;
+        font-size: 25px !important;
+
+    }
+
+    .slider-container {
+        width: 90%;
+        height: 255px !important;
+        overflow: hidden;
+        position: relative;
+    }
+
+
 }
 
 /* Bouton précédent */

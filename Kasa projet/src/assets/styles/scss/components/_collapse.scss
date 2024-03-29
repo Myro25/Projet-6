@@ -9,6 +9,8 @@
     margin-top: 31px;
 
 
+
+
     & .collapse-head {
         @extend %displayflex;
         background-color: $color-primary;
@@ -51,5 +53,33 @@
         color: black;
         padding: 30px 12px 27px 20px;
         font-size: 18px;
+        list-style-type: none;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .Collapse .collapse-head {
+        background-color: #ff6060;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 30px;
+        border-radius: 5px;
+        padding: 0 10px;
+    }
+
+    .Collapse .collapse-head span img {
+        display: flex;
+        justify-content: flex-end;
+        /* margin-right: 10px; */
+        width: 80%;
+        margin: 0;
     }
 }

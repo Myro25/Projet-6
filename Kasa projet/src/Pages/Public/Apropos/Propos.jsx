@@ -2,7 +2,7 @@
 import React from 'react';
 import Collapse from '@/Components/collapse'
 import aboutData from '@/assets/API/aboutData.json';
-import Banner from '@/Components/Banner_about'
+import Banner from '@/Components/Banner'
 import imgbanner from "@/assets/Image/background_about.png";
 
 const Propos = () => {
