@@ -1,10 +1,9 @@
 /* Slider container */
 .slider-container {
-    width: 1240px;
+    width: 90%;
     height: 415px;
     overflow: hidden;
     position: relative;
-    /* Ajout de la position relative pour positionner les boutons */
 }
 
 /* Slideshow container */
@@ -29,13 +28,13 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
     border: none;
-    color: #333;
-    font-size: 24px;
+    color: white;
+    font-size: 55px;
     padding: 10px;
     cursor: pointer;
     z-index: 1;
+    background-color: transparent;
 }
 
 /* Positionnement de la flèche précédente */

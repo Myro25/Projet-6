@@ -32,7 +32,17 @@ const FicheLogement = () => {
         }
     };
 
-
+    const displayequipments = (equipments) => {
+        return (
+            <ul>
+                {equipments.map((equipement, index) => {
+                    return (
+                        <li key={index}>{equipement}</li>
+                    )
+                })}
+            </ul>
+        )
+    }
 
     // chargement de la page 
     if (waiting) return <h3>Chargement..</h3>;
@@ -58,8 +68,10 @@ const FicheLogement = () => {
                     <div className="details_profil_container">
                         <h4>{logement.host.name}</h4>
                         <img src={logement.host.picture} alt={logement.host.name} />
-                        <Rating value={logement.rating} />
                     </div>
+                    <ul>
+                        <Rating value={logement.rating} />
+                    </ul>
                 </div>
             </div>
             <div className="details_container_details">
@@ -72,7 +84,7 @@ const FicheLogement = () => {
                 {/* Collapse pour les équipements */}
                 <Collapse
                     title="Équipements"
-                    description={logement.equipments.join(',')} // Si logement.equipments est un tableau, le transformer en une chaîne de caractères séparée par une virgule
+                    description={displayequipments(logement.equipments)} // Si logement.equipments est un tableau, le transformer en une chaîne de caractères séparée par une virgule
                     comportement="liste"
                 />
             </div>
