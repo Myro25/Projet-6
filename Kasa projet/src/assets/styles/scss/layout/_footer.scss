@@ -2,6 +2,8 @@ body {
     margin: 0;
 }
 
+
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -31,4 +33,12 @@ body {
         margin: auto;
         /* Centrer horizontalement */
     }
+
+    img {
+        justify-content: center;
+
+        display: flex;
+        margin: AUTO;
+    }
+
 }
