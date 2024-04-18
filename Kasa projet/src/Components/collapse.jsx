@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
-
 import flechehaut from "@/assets/Image/FlecheHaut.png";
 import flechebas from "@/assets/Image/FlecheBas.png";
 
-const Collapse = ({ title, description, comportement }) => {
 
+const Collapse = ({ title, description, comportement }) => {
     const [open, setOpen] = useState(false);
+    const [arrowUp, setArrowUp] = useState(true); // Initialiser la flèche vers le haut
 
     const toggleCollapse = () => {
         setOpen(!open);
+        if (!open) {
+            setArrowUp(true); // maj l'état de la flèche uniquement lorsque le Collapse est ouvert
+        }
     };
 
     return (
@@ -16,7 +19,11 @@ const Collapse = ({ title, description, comportement }) => {
             <div className="collapse-head" onClick={toggleCollapse}>
                 <h2>{title}</h2>
                 <span>
-                    <img src={open ? flechehaut : flechebas} alt="flechesquitourne" />
+                    <img
+                        src={arrowUp ? flechehaut : flechebas} // Utilisez l'état de la flèche ici
+                        alt="flechesquitourne"
+                        className={open ? 'arrow-rotate' : ''} // classe pour la rotation si ouvert
+                    />
                 </span>
             </div>
             {
@@ -33,7 +40,6 @@ const Collapse = ({ title, description, comportement }) => {
                         </ul>
                     )
                 )
-
             }
         </li>
     );

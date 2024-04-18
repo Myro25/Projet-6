@@ -31,7 +31,6 @@
     .next-btn {
         top: 50% !important;
         font-size: 25px !important;
-
     }
 
     .slider-container {
@@ -41,7 +40,9 @@
         position: relative;
     }
 
-
+    .photo-number {
+        display: none;
+    }
 }
 
 /* Bouton précédent */
@@ -67,4 +68,15 @@
 /* Positionnement de la flèche suivante */
 .next-btn {
     right: 10px;
+}
+
+/* Positionnement du numéro de la photo */
+.photo-number {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+    z-index: 1;
 }

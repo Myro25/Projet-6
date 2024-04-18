@@ -57,12 +57,23 @@
     }
 }
 
+
+
+.Collapse .arrow-rotate {
+    transition: transform 0.5s ease;
+    transform: rotate(-180deg);
+
+}
+
+
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 
 }
+
 
 
 @media screen and (max-width: 600px) {

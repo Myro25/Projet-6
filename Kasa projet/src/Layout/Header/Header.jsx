@@ -13,7 +13,7 @@ function Header() {
             <img src={logo} alt='Kasa' className='header__logo'></img>
             <div id='header__button'>
                 {/* //il faut remplacer a par navlink */}
-                <NavLink to="/home" className='header__button--'>Accueil</NavLink>
+                <NavLink to="/home" className='header__button--' >Accueil</NavLink>
                 <NavLink to="/about" className='header__button--'>A propos</NavLink>
             </div>
 
