@@ -1,10 +1,9 @@
 .SectionLogement {
     display: flex;
     width: 100%;
-    padding-top: 45px;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
 }
 
 .details_container {
@@ -148,7 +147,7 @@ ul {
 
 
     .SectionLogement {
-        gap: 10px;
+        gap: 1px;
     }
 
     .details_container {
@@ -189,18 +188,21 @@ ul {
     }
 
     .details_tag_container p {
+
         width: 84px;
-        height: 18px;
+        /* height: 18px; */
         border-radius: 5px;
         background: #ff6060;
         color: #FFF;
         text-align: center;
-        /* align-items: center; */
         font-family: Montserrat;
         font-size: 10px;
         font-style: normal;
         font-weight: 700;
         margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* Mobile styles */
@@ -221,6 +223,10 @@ ul {
         /* Espacement égal entre les éléments */
         align-items: center;
         /* Pour centrer verticalement */
+
+        h4 {
+            margin: 0;
+        }
     }
 
 
